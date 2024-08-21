@@ -62,15 +62,20 @@
   programs.bash.initExtra = ''
     source ~/user_functions.sh
   '';
-  
+
   # run dconf watch
   dconf.settings = {
-    "/org/gnome/desktop/calendar"={
-        show-weekdate = true;
+    "/org/gnome/desktop/calendar" = {
+      show-weekdate = true;
     };
-     "/org/gnome/desktop/interface" = {
-        font-name = "GeistMono Nerd Font Propo Light 11";
-   };
+    "/org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      gtk-theme = "Yaru-dark";
+      font-name = "GeistMono Nerd Font Propo Light 11";
+    };
+    "/org/gnome/gedit/preferences/editor" = {
+      scheme = "Yaru-dark";
+    };
   };
 
   programs.gnome-terminal = {
