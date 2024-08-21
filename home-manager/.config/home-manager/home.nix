@@ -54,7 +54,7 @@
 
     programs.bash.enable = true;
     programs.bash.shellAliases = {
-      cat = "bat";
+      cat = "bat --theme zenburn";
       ll = "ls -lah";
     };
 
