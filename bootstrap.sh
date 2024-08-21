@@ -26,3 +26,5 @@ home-manager switch -b backup
 
 git submodule update --init
 stow neovim --adopt
+
+stow bash --adopt
