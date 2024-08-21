@@ -50,8 +50,6 @@
 
     programs.go.enable = true;
 
-    programs.kitty.enable = true;
-
     programs.bash.enable = true;
     programs.bash.shellAliases = {
       cat = "bat --theme zenburn";
