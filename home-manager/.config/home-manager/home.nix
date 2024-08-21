@@ -62,6 +62,16 @@
   programs.bash.initExtra = ''
     source ~/user_functions.sh
   '';
+  
+  # run dconf watch
+  dconf.settings = {
+    "/org/gnome/desktop/calendar"={
+        show-weekdate = true;
+    };
+     "/org/gnome/desktop/interface" = {
+        font-name = "GeistMono Nerd Font Propo Light 11";
+   };
+  };
 
   programs.gnome-terminal = {
     enable = true;
